@@ -3,6 +3,11 @@ import Companies from "../Components/Companies";
 import Hero from "../Components/Hero";
 import Content from "../Components/Content";
 import Faq from "../Components/Faq";
+import Antihistamine from "../assets/Antihistamine.jpg";
+import Booster from "../assets/Booster.jpg";
+import ColdandFlu from "../assets/ColdandFlu.jpg";
+import FirstAid from "../assets/FirstAid.jpg";
+import Immunity from "../assets/Immunity.jpg";
 
 
 export default function Home() {
@@ -11,34 +16,34 @@ export default function Home() {
         <Hero />
          <div className="carousel gap-1 carousel-end rounded-box">
   <div className="carousel-item">
-    <img src="/src/assets/Antihistamine.jpg" alt="Drink" />
+    <img src={Antihistamine} alt="Drink" />
   </div>
   <div className="carousel-item">
     <img
-      src="/src/assets/Booster.jpg"
+      src={Booster}
       alt="Drink" />
   </div>
   <div className="carousel-item">
     <img
-      src="/src/assets/ColdandFlu.jpg"
+      src={ColdandFlu}
       alt="Drink" />
   </div>
   <div className="carousel-item">
     <img
-        src="/src/assets/FirstAid.jpg"
+        src={FirstAid}
         alt="Drink" />
     </div>
     <div className="carousel-item">
-        <img src="/src/assets/Immunity.jpg" 
+        <img src={Immunity}
         alt="Drink" />
     </div>
     <div className="carousel-item">
-        <img src="/src/assets/Booster.jpg" 
+        <img src={Antihistamine}
         alt="Drink" />
     </div>
     <div className="carousel-item">
         <img
-        src="/src/assets/Antihistamine.jpg"
+        src={Booster}
         alt="Drink" />
     </div>
     </div>
