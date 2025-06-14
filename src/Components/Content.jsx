@@ -2,6 +2,7 @@ import { CloudArrowUpIcon, LockClosedIcon, ServerIcon } from '@heroicons/react/2
 import { ArrowDownCircleIcon } from '@heroicons/react/24/outline'
 import { HomeIcon } from '@heroicons/react/24/outline'
 import { HeartIcon } from '@heroicons/react/24/outline'
+import Pharmacy from '../assets/Pharmacy.jpg'
 
 export default function Content() {
   return (
@@ -49,7 +50,7 @@ export default function Content() {
         <div className="-mt-12 -ml-12 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
           <img
             alt=""
-            src="/src/assets/Pharmacy.jpg"
+            src={Pharmacy}
             className="w-3xl max-w-none rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10 sm:w-228"
           />
         </div>
