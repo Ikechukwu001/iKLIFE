@@ -26,13 +26,13 @@ export default function FAQ() {
   };
 
   return (
-    <div className="max-w-2xl mx-auto p-6">
+    <div className="w-full max-w-[640px] mx-auto p-6">
       <h2 className="text-2xl text-black font-bold mb-6 text-center">Frequently Asked Questions</h2>
       <div className="space-y-4">
         {faqs.map((faq, index) => (
           <div
             key={index}
-            className="rounded-lg p-4 shadow-md transition-all"
+            className="rounded-lg p-4 shadow-md transition-all bg-white"
           >
             <button
               onClick={() => toggleFAQ(index)}
@@ -43,9 +43,14 @@ export default function FAQ() {
                 {openIndex === index ? "−" : "+"}
               </span>
             </button>
-            {openIndex === index && (
-              <p className="mt-3 text-gray-600">{faq.answer}</p>
-            )}
+
+            <div
+              className={`overflow-hidden transition-all duration-300 ease-in-out ${
+                openIndex === index ? "max-h-40 mt-3" : "max-h-0"
+              }`}
+            >
+              <p className="text-gray-600">{faq.answer}</p>
+            </div>
           </div>
         ))}
       </div>
